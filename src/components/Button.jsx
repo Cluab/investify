@@ -7,7 +7,8 @@ const Btn = styled.button`
   color: rgba(0, 74, 145, 1);
   font-weight: 600;
   font-size: 17px;
-  width: 100px;
+  width: auto;
+  height: 50px;
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -18,9 +19,9 @@ const Btn = styled.button`
   }
 `;
 
-const Button = ({text}) => {
+const Button = ({text, style}) => {
     return(
-    <Btn>{text}</Btn>)
+    <Btn style={style}>{text}</Btn>)
 }
 
 export default Button;
