@@ -1,0 +1,22 @@
+[
+    {
+        "name": "John Doe",
+        "accountName": "Personal Savings",
+        "correspondenceAddress": "123 Main Street, City, Country",
+        "accountNumber": "1234567890",
+        "certificates": "Client",
+        "profitsOrIncome": "Other Entity",
+        "salesOutcomes": "Custodian",
+        "certification": "Certified"
+    },
+    {
+        "name": "Jane Smith",
+        "accountName": "Investment Portfolio",
+        "correspondenceAddress": "456 Elm Street, City, Country",
+        "accountNumber": "0987654321",
+        "certificates": "Client",
+        "profitsOrIncome": "Other Entity",
+        "salesOutcomes": "Custodian",
+        "certification": "Certified"
+    }
+]
