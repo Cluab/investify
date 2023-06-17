@@ -1,12 +1,11 @@
-import Button from "@/components/Button";
-import Navbar from "@/components/Navbar";
+
+import FromSearch from "@/components/FromSearch";
 
 export default function Home() {
 
     return(
         <>
-        <h1>home</h1>
-        <Button text='hello' />
+        <FromSearch />
         </>
     )
 };

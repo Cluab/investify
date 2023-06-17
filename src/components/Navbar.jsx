@@ -62,7 +62,7 @@ const Navbar = () => {
       height={30} alt="vector"/>
 
 <Image src={notification}  width={40}
-      height={30} alt="vector"/>
+      height={30} alt="notification"/>
     <LanguageContainer>
         <OptionOne>
             EN
