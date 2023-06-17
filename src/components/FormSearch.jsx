@@ -41,7 +41,7 @@ const Right = styled.div `
 `
 
 
-const FromSearch = () => {
+const FormSearch = () => {
     return(
         <Container>
             <Left>
@@ -77,4 +77,4 @@ const FromSearch = () => {
     )
 } 
 
-export default FromSearch
+export default FormSearch
