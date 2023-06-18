@@ -1,13 +1,10 @@
+import Main from "@/components/Main";
+import { GetForms } from "@/lib/api";
 
-import FormGroup from "@/components/FormGroup";
-import FromSearch from "@/components/FormSearch";
-
-export default function Home() {
+export default async function Home() {
+ const data = await GetForms()
 
     return(
-        <>
-        <FromSearch />
-        <FormGroup />
-        </>
+        <Main data={data}/>
     )
 };

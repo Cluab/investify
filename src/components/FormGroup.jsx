@@ -20,25 +20,38 @@ const Table = styled.table `
 
 `
 
-const FormGroup = () => {
-    return(
-        <Container>
-            <Upper>
-                <Button text={'Approved'} />
-                <Button text={'Pending'}/>
-            </Upper>
+const FormGroup = ({ data }) => {
+    console.log(data)
+    return (
+      <Container>
+        <Upper>
+          <Button text={'Approved'} />
+          <Button text={'Pending'} />
+        </Upper>
         <Lower>
-            <Table>
-                <tr>
-                    <th>ID</th>
-                    <th>Form Title</th>
-                    <th>Date</th>
-                    <th>Action</th>
+          <Table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Form Title</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((info) => (
+                <tr key={info.id}>
+                  <td>{info.id}</td>
+                  <td>{info.accountName}</td>
+                  <td>{info.date}</td>
+                  <td>Action</td>
                 </tr>
-            </Table>
+              ))}
+            </tbody>
+          </Table>
         </Lower>
-        </Container>
-    )
-}
-
+      </Container>
+    );
+  };
+  
 export default FormGroup

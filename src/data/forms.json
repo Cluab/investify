@@ -1,15 +1,18 @@
 [
     {
+        "id": 0,
         "name": "John Doe",
-        "accountName": "Personal Savings",
+        "accountName": "ersonal Savings",
         "correspondenceAddress": "123 Main Street, City, Country",
         "accountNumber": "1234567890",
         "certificates": "Client",
         "profitsOrIncome": "Other Entity",
         "salesOutcomes": "Custodian",
-        "certification": "Certified"
+        "certification": "Certified",
+        "date": "20/12/2004"
     },
     {
+        "id": 1,
         "name": "Jane Smith",
         "accountName": "Investment Portfolio",
         "correspondenceAddress": "456 Elm Street, City, Country",
@@ -17,6 +20,7 @@
         "certificates": "Client",
         "profitsOrIncome": "Other Entity",
         "salesOutcomes": "Custodian",
-        "certification": "Certified"
+        "certification": "Certified",
+        "date": "10/4/2018"
     }
 ]
