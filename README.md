@@ -25,8 +25,8 @@ This is a small-scale investment platform developed using Next.js, React.js, and
 
 ### Prerequisites
 
-- Node.js (version X.X.X)
-- npm (version X.X.X)
+- Node.js
+- npm
 
 ### Installation
 
