@@ -1,34 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Investment Platform
+
+This is a small-scale investment platform developed using Next.js, React.js, and styled-components. It allows users to view and manage investment forms, including creating new forms, updating existing forms, and deleting forms.
+
+## Features
+
+- Home Page: The homepage displays all the investment forms in descending order of their action date. Each form preview includes the form title and a side menu of requirements such as Custodian Details, Other Information, and Certification.
+
+- Form Actions: Users can perform CRUD operations (Create, Read, Update, Delete) on investment forms. They can create a new form, update existing forms, and delete forms.
+
+- API Routes: Custom API routes are implemented in Next.js to handle the communication with the server for CRUD operations. The forms data is stored in a JSON file on the server-side.
+
+- Data Storage: The investment form data is stored in a JSON file using the fs module to read and write data. This ensures persistence and retrieval of data between server restarts.
+
+- Styling: CSS-in-JS solutions (styled-components) are used for styling the components, providing a modular and maintainable approach. The application is mobile responsive, adapting to different screen sizes.
+
+## Technologies Used
+
+- Next.js
+- React.js
+- styled-components
+- fs module (for data storage)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Node.js (version X.X.X)
+- npm (version X.X.X)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/Cluab/investify.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd investify
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+### Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```bash
+  npm run dev
+  ```
+
+2. Open your browser and visit http://localhost:3000 to access the application.
+
+## Authors
+
+👤 **Ibrahim Suhail Al-Yousefi**
+
+- GitHub: [@cluab](https://github.com/Cluab)
+- Twitter: [@cluab122](https://twitter.com/cluab122)
+- LinkedIn: [Ebrahim Al-Yousefi](https://www.linkedin.com/in/ebrahim-alyousefi/)
+- Instagram: [@27.i.b](https://www.instagram.com/27.i.b/)
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Cluab/investify/issues) for any open issues.
+
+## Show Your Support
+
+If you like this project, please give it a star on GitHub!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
