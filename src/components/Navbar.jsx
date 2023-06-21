@@ -55,6 +55,7 @@ border:1px solid rgba(0, 74, 145, 0.35);
 padding: 8px;
 gap: 14px;
 border-radius: 8px;
+align-items: center;
 `
 
 const AccountSymbol = styled.h1 `
@@ -73,7 +74,7 @@ const AccountSymbol = styled.h1 `
 const PContainer = styled.div `
     display: flex;
     flex-direction: column;
-    gap: 4px;
+
 `
 
 const UpperP = styled.p `
@@ -81,7 +82,7 @@ const UpperP = styled.p `
 `
 
 const LowerP = styled.p `
-    font-size: 15px;
+    font-size: 14px;
 `
 
 
