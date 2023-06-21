@@ -1,6 +1,7 @@
 'use client'
 
 import styled, { css } from "styled-components";
+import variables from "@/styles/variables";
 
 const Btn = styled.button`
   background-color: white;

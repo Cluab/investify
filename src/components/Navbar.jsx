@@ -18,34 +18,66 @@ const Container = styled.div `
 
 
 const LanguageContainer = styled.div `
-    
+    width: 83px;
+    height: 34.58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 37, 34, 1);
+    padding: 3px;
+    border-radius: 10px;
 `
 
 const OptionOne = styled.button `
-    
+    color:white;
+    background-color: rgba(42, 37, 34, 1);
+    padding: 4px;
+    width: 37px;
+    height: auto;
+    font-size: 16px;
+    border-radius: 10px;
 `
 const OptionTwo = styled.button `
-    
+    color:white;
+    background-color: rgba(220, 172, 0, 1);
+    padding: 4px;
+    padding-bottom: 3px;
+    width: 37px;
+    height: 27px;
+    font-size: 14px;
+    border-radius: 10px;
 `
 
 const AccountContainer = styled.div `
 display: flex;
 flex-direction: row;
-
+border:1px solid rgba(0, 74, 145, 0.35);
+padding: 8px;
+gap: 14px;
+border-radius: 8px;
 `
 
 const AccountSymbol = styled.h1 `
-    height: 30px;
-    width: auto;
+    height: 32px;
+    width: 32px;
+    color:white;
+    background-color: rgba(0, 74, 145, 1);
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const PContainer = styled.div `
     display: flex;
     flex-direction: column;
+    gap: 4px;
 `
 
 const UpperP = styled.p `
-    font-size: 10px;
+    font-size: 13px;
 `
 
 const LowerP = styled.p `
@@ -57,7 +89,7 @@ const LowerP = styled.p `
 const Navbar = () => {
     return (
 <Container>
-<Button text={'Individual Investor'} style={{ borderRadius: "5%" }}/>
+<Button text={'Individual Investor'} style={{ borderRadius: "5%" }} active={true}/>
 <Image src={vector}  width={40}
       height={30} alt="vector"/>
 
@@ -77,10 +109,10 @@ const Navbar = () => {
         </AccountSymbol>
         <PContainer>
         <UpperP>
-
+        Welcome!
         </UpperP>
         <LowerP>
-
+        Ebrahim Suhail
         </LowerP>
         </PContainer>
         <Image src={arrow}  width={40}

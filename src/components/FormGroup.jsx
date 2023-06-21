@@ -17,6 +17,10 @@ const Lower = styled.div``;
 
 const Table = styled.table``;
 
+const TableHead = styled.thead`
+  background-color: rgba(0, 74, 145, 1);
+`
+
 const FormGroup = ({ data }) => {
   const [status, setStatus] = useState("approved"); // "approved" as initial status, can be "approved" or "pending"
 
