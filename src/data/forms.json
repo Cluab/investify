@@ -2,7 +2,7 @@
     {
         "id": 0,
         "name": "John Doe",
-        "accountName": "ersonal Savings",
+        "accountName": "Personal Savings",
         "correspondenceAddress": "123 Main Street, City, Country",
         "accountNumber": "1234567890",
         "certificates": "Client",

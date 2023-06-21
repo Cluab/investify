@@ -12,7 +12,6 @@ justify-content: center;
 `
 
 const Main = ({data}) => {
-    console.log(data)
     return (
         <Section>
 <FormSearch />

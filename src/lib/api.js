@@ -19,9 +19,9 @@ const fetcher = async ({ url, method, body, json = true }) => {
 };
 
 export const GetForms = async () => {
-    const baseUrl = 'http://localhost:3000'; // Add your base URL if needed, e.g., 'http://localhost:3000'
-    const url = new URL('/api/forms', baseUrl);
-  
+    const baseUrl = 'http://localhost:3000'; 
+    const noCache = Date.now().toString(16);
+    const url = new URL(`/api/forms?noCache=${noCache}`, baseUrl);
     return fetcher({
       url: url.toString(),
       method: 'get',
