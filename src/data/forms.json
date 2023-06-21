@@ -9,7 +9,8 @@
         "profitsOrIncome": "Other Entity",
         "salesOutcomes": "Custodian",
         "certification": "Certified",
-        "date": "20/12/2004"
+        "date": "20/12/2004",
+        "status": "approved"
     },
     {
         "id": 1,
@@ -21,6 +22,7 @@
         "profitsOrIncome": "Other Entity",
         "salesOutcomes": "Custodian",
         "certification": "Certified",
-        "date": "10/4/2018"
+        "date": "10/4/2018",
+        "status": "pending"
     }
 ]

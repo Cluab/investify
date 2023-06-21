@@ -1,6 +1,6 @@
 'use client'
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Btn = styled.button`
   background-color: white;
@@ -17,11 +17,21 @@ const Btn = styled.button`
     background-color:  rgba(0, 74, 145, 1);
     color: white;
   }
+
+  ${(props) =>
+    props.active &&
+    css`
+      background-color: rgba(0, 74, 145, 1);
+      color: white;
+    `}
 `;
 
-const Button = ({text, style}) => {
-    return(
-    <Btn style={style}>{text}</Btn>)
-}
+const Button = ({ text, style, onClick, active }) => {
+  return (
+    <Btn style={style} active={active} onClick={onClick}>
+      {text}
+    </Btn>
+  );
+};
 
 export default Button;
