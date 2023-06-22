@@ -14,9 +14,7 @@ export default function AuthRootLayout({ children }) {
             <head />
             <body>
                 <Navbar />
-                <FormEdit>
-                    {children}
-                </FormEdit>
+                    {children}        
         </body>
         </html>
     )

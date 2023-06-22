@@ -1,16 +1,26 @@
+'use client'
+import styled from "styled-components";
 import Main from "./Main"
 import IntroCard from "./IntroCard"
-import FormSelector from "./FormSelector"
+import Sidebar from "./Sidebar"
 
+const Container = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+    
+`
 
 const FormEdit = ({children}) => {
     return(
         <Main>
             <IntroCard title={"Custodian Form"} details={"Lorem ipsum dolor sit amet"} search={false}  />
-           <FormSelector>
-            {children}
-            
-           </FormSelector>
+            <Container>
+        <Sidebar />
+        {children}
+    </Container>
         </Main>
     )
 }
