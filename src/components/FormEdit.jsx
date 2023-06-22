@@ -9,6 +9,7 @@ const FormEdit = ({children}) => {
             <IntroCard title={"Custodian Form"} details={"Lorem ipsum dolor sit amet"} search={false}  />
            <FormSelector>
             {children}
+            
            </FormSelector>
         </Main>
     )

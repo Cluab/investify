@@ -7,6 +7,7 @@ const CardSec = styled.section`
     flex-direction: row;
     padding: 6rem;
     justify-content: center;
+    
 `
 
 const Card = ({children}) => {

@@ -7,7 +7,7 @@ const Container = styled.div`
     flex-direction: row;
     width: 100%;
     background-color: white;
-    justify-content: space-between;
+    gap: 20px;
     
 `
 
