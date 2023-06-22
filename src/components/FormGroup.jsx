@@ -1,9 +1,12 @@
+'use client'
+
 import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import EditIcon from '@mui/icons-material/Edit';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import GetAppIcon from '@mui/icons-material/GetApp';
+import Link from "next/link";
 
 const Container = styled.div`
   display: flex;
@@ -115,7 +118,7 @@ const FormGroup = ({ data }) => {
                 <td align="center">{info.accountName}</td>
                 <td align="center">{info.date}</td>
                 <td align="center"><ActionContainer>
-                  <EditContainer><EditIcon /></EditContainer>
+                  <EditContainer><Link href={`details/${info.id}`}><EditIcon /></Link></EditContainer>
                   <SeeContainer><VisibilityIcon /></SeeContainer>
                   <DownloadContainer><GetAppIcon /></DownloadContainer>
                   </ActionContainer></td>
