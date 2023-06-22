@@ -47,7 +47,7 @@ const UpperP = styled.h3 `
     color: rgba(0, 74, 145, 1);
 `
 
-const lowerP = styled.p `
+const LowerP = styled.p `
     font-size: 15px;
     color: rgba(0, 74, 145, 1);
 `
@@ -76,9 +76,9 @@ const IntroCard = ({title, details, search}) => {
                         <UpperP>
                             {title}
                         </UpperP>
-                        <lowerP>
+                        <LowerP>
                         {details}
-                        </lowerP>
+                        </LowerP>
                     </PContainer>
             </Left>
         <Right>

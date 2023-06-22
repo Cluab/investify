@@ -7,7 +7,7 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 const icons = { PersonIcon, InfoIcon,WorkspacePremiumIcon };
 
-const SideLink = ({ link, key }) => {
+const SideLink = ({ link }) => {
     const pathname = usePathname();
     let isActive = false;
 
@@ -18,7 +18,7 @@ const SideLink = ({ link, key }) => {
     const Icon = icons[link.icon];
     
     return (
-        <Link href={link.link} key={key}>
+        <Link href={link.link}>
             <Icon/>
         </Link>
     );

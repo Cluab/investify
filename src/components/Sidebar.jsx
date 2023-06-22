@@ -27,7 +27,9 @@ const Sidebar = () => {
     return (
         <Container>
             {links.map((link) => (
+                <div key={link.id}>
                 <SideLink link={link}/>
+                </div>
             ))}
         </Container>
     );

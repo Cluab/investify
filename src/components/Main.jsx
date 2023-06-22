@@ -10,7 +10,7 @@ flex-direction: column;
 padding: 6rem;
 justify-content: center;
 align-items: center;
-
+gap: 10px;
 
 `
 
