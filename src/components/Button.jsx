@@ -27,9 +27,10 @@ const Btn = styled.button`
     `}
 `;
 
-const Button = ({ text, style, onClick, active }) => {
+const Button = ({ text, style, onClick, active, children = null }) => {
   return (
     <Btn style={style} active={active} onClick={onClick}>
+      {children}
       {text}
     </Btn>
   );
