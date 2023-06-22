@@ -1,25 +1,71 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Button";
+import EditIcon from '@mui/icons-material/Edit';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import GetAppIcon from '@mui/icons-material/GetApp';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+  gap: 20px;
 `;
 
 const Upper = styled.div`
   flex-direction: column;
+  padding-top: 20px;
 `;
 
-const Lower = styled.div``;
+const Lower = styled.div`
+  width: 100%;
+`;
 
-const Table = styled.table``;
+const Table = styled.table`
+  width: 100%;
+  border: none;
+`;
 
 const TableHead = styled.thead`
   background-color: rgba(0, 74, 145, 1);
+  color: white;
 `
+
+const TableBody = styled.tbody`
+color: black;
+`
+const ActionContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+`
+
+const EditContainer = styled.div`
+  background-color: rgba(0, 74, 145, 1);
+  border-radius: 1px;
+  padding: 8px;
+  padding-bottom: 0;
+`
+const SeeContainer = styled.div`
+  color: rgba(0, 74, 145, 1);
+  border-radius: 1px;
+  padding: 8px;
+  padding-bottom: 0;
+`
+const DownloadContainer = styled.div`
+  background-color: rgba(220, 172, 0, 1);
+  border-radius: 1px;
+  padding: 8px;
+  padding-bottom: 0;
+`
+
 
 const FormGroup = ({ data }) => {
   const [status, setStatus] = useState("approved"); // "approved" as initial status, can be "approved" or "pending"
@@ -53,25 +99,29 @@ const FormGroup = ({ data }) => {
 />
       </Upper>
       <Lower>
-        <Table>
-          <thead>
+        <Table align="center">
+          <TableHead>
             <tr>
-              <th>ID</th>
-              <th>Form Title</th>
-              <th>Date</th>
-              <th>Action</th>
+              <th align="center">ID</th>
+              <th align="center">Form Title</th>
+              <th align="center">Date</th>
+              <th align="center">Action</th>
             </tr>
-          </thead>
-          <tbody>
+          </TableHead>
+          <TableBody align="center">
             {filteredData.map((info) => (
               <tr key={info.id}>
-                <td>{info.id}</td>
-                <td>{info.accountName}</td>
-                <td>{info.date}</td>
-                <td>Action</td>
+                <td align="center">{info.id}</td>
+                <td align="center">{info.accountName}</td>
+                <td align="center">{info.date}</td>
+                <td align="center"><ActionContainer>
+                  <EditContainer><EditIcon /></EditContainer>
+                  <SeeContainer><VisibilityIcon /></SeeContainer>
+                  <DownloadContainer><GetAppIcon /></DownloadContainer>
+                  </ActionContainer></td>
               </tr>
             ))}
-          </tbody>
+          </TableBody>
         </Table>
       </Lower>
     </Container>
