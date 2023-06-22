@@ -1,21 +1,23 @@
 'use client'
 import styled from "styled-components"
-import FormSearch from "./FormSearch"
+import FormSearch from "./IntroCard"
 import FormGroup from "./FormGroup"
+import IntroCard from "./IntroCard"
 
 const Section = styled.section `
 display: flex;
 flex-direction: column;
 padding: 6rem;
 justify-content: center;
+align-items: center;
+
 
 `
 
-const Main = ({data}) => {
+const Main = ({ children }) => {
     return (
         <Section>
-<FormSearch />
-<FormGroup data={data}/>
+            {children}
         </Section>
     )
 }

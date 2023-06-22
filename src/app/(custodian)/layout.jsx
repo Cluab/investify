@@ -1,5 +1,10 @@
+import Card from "@/components/Card";
 import Navbar from "@/components/Navbar";
-import "@/styles/global.css";
+import Sidebar from "@/components/Sidebar";
+import IntroCard from "@/components/IntroCard";
+import "src/styles/globals.css";
+import styled from "styled-components";
+
 
 
 export default function AuthRootLayout({ children }) {
@@ -8,7 +13,11 @@ export default function AuthRootLayout({ children }) {
             <head />
             <body>
                 <Navbar />
+                <Card>
+                <IntroCard title={"Custodian Form"} details={"Lorem ipsum dolor sit amet"} search={false}  />
+                    <Sidebar />
                     {children}   
+                </Card>
         </body>
         </html>
     )
