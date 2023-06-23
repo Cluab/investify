@@ -28,4 +28,17 @@ export const GetForms = async () => {
       json: true,
     });
   };
+
+  export const updateForm = async (formId, updatedFields) => {
+    const baseUrl = 'http://localhost:3000'; 
+    const noCache = Date.now().toString(16);
+    const url = new URL(`/api/forms?noCache=${noCache}`, baseUrl);
+    // Send the updated form data to the API
+    return fetcher({
+      url: url.toString(),
+      method: 'put',
+      body: {updatedFields, formId},
+      json: true,
+    });
+  };
   
