@@ -1,6 +1,6 @@
+import "src/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import StyledComponentsRegistry from "@/lib/registry";
-import "src/styles/globals.css";
 
 
 

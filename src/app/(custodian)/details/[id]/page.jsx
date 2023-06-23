@@ -1,10 +1,10 @@
 import CustodianDetails from "@/components/CustodianDetails";
-import FormEdit from "@/components/FormEdit";
-import IntroCard from "@/components/IntroCard";
+import { GetForms } from "@/lib/api";
 
-export default function Details() {
+export default async function Details() {
+    const data = await GetForms()
 
     return(
-        <><IntroCard title={"Custodian Form"} details={"Lorem ipsum dolor sit amet"} search={false} /><CustodianDetails /></>
+        <CustodianDetails data={data} />
     )
 };
