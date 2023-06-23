@@ -12,9 +12,10 @@ const Btn = styled.button`
   height: 50px;
   padding: 10px;
   border: none;
+  transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 
-  &:active {
+  &:hover {
     background-color:  rgba(0, 74, 145, 1);
     color: white;
   }

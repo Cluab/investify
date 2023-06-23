@@ -23,6 +23,7 @@ const SideLink = ({ link }) => {
     display: "flex",
     padding: "10px 53.5px 10px 20px",
     alignItems: "center",
+    width: "100%",
     gap: "12px",
   }}>
                 <Icon/>
