@@ -1,6 +1,8 @@
+import InformationControl from "@/components/InformationControl";
+
 export default function Information() {
 
     return(
-        <h1>Information</h1>
+        <InformationControl />
     )
 };

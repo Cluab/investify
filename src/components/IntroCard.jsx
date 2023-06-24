@@ -83,6 +83,7 @@ const IntroCard = ({title, details, search}) => {
   <>
     <OutlinedInput
       type='text'
+      sx={{ m: 1, minWidth: 120 }}
       endAdornment={
         <InputAdornment position="end">
           <SearchIcon />
@@ -90,12 +91,11 @@ const IntroCard = ({title, details, search}) => {
       }
     />
     <FormControl sx={{ m: 1, minWidth: 120 }}>
-      <Select
-        value={order}
-        onChange={handleChange}
-        displayEmpty
-        inputProps={{ 'aria-label': 'Without label' }}
-      >
+    <Select
+            value={'Recent Action'}
+            displayEmpty
+            inputProps={{ 'aria-label': 'Without label' }}
+        >
         <MenuItem value={10}>Recent Action</MenuItem>
         <MenuItem value={20}>Latest Action</MenuItem>
       </Select>
