@@ -1,13 +1,13 @@
-'use client'
-import { useState } from "react";
-import styled from "styled-components";
-import TextField from '@mui/material/TextField';
-import Button from "./Button";
-import { updateForm } from "@/lib/api";
-import { useParams } from "next/navigation";
-import Link from "next/link";
-import { primary } from "@/styles/variables";
+'use client';
 
+import { useState } from 'react';
+import styled from 'styled-components';
+import TextField from '@mui/material/TextField';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
+import Button from './Button';
+import { updateForm } from '@/lib/api';
+import { primary } from '@/styles/variables';
 
 const Container = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ const ButtonContainer = styled.div`
 
 const CustodianDetails = () => {
   const params = useParams();
-  const id = params.id;
+  const { id } = params;
   const [form, setForm] = useState({
     name: '',
     accountName: '',
@@ -101,9 +101,10 @@ const CustodianDetails = () => {
           </Row>
         </InputContainer>
         <ButtonContainer>
-        <Link href={'/home'}>
-          <Button text={'Cancel'} style={{ border: '1px solid #004a91', width: '180px'}} /></Link>
-          <Button text={'Save'} type="submit" style={{ border: '1px solid #004a91', width: '180px'}} />
+          <Link href="/home">
+            <Button text="Cancel" style={{ border: '1px solid #004a91', width: '180px' }} />
+          </Link>
+          <Button text="Save" type="submit" style={{ border: '1px solid #004a91', width: '180px' }} />
         </ButtonContainer>
       </form>
     </Container>

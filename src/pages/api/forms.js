@@ -18,23 +18,21 @@ export default async function handler(req, res) {
   } else if (req.method === 'PUT') {
     // Handle PUT request for updating an existing form
     const { updatedFields } = req.body;
-    const { formId } = req.body
+    const { formId } = req.body;
     const formsData = await loadFormsData();
     const existingForm = formsData.find((form) => form.id === parseInt(formId));
 
-      const updatedForm = {
-        ...existingForm,
+    const updatedForm = {
+      ...existingForm,
     };
 
-     for (const key in updatedFields) {
+    for (const key in updatedFields) {
       if (Object.prototype.hasOwnProperty.call(updatedFields, key)) {
-          updatedForm[key] = updatedFields[key];
-        }
+        updatedForm[key] = updatedFields[key];
+      }
     }
-  
-    const updatedFormsData = formsData.map((form) =>
-    form.id === updatedForm.id ? updatedForm : form
-    );
+
+    const updatedFormsData = formsData.map((form) => (form.id === updatedForm.id ? updatedForm : form));
     await saveFormsData(updatedFormsData);
     res.status(200).json(updatedForm);
   } else if (req.method === 'DELETE') {

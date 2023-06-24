@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const CardSec = styled.section`
     display: flex;
@@ -8,10 +8,8 @@ const CardSec = styled.section`
     padding: 6rem;
     justify-content: center;
     
-`
+`;
 
-const Card = ({children}) => {
-    return <CardSec>{children}</CardSec>
-};
+const Card = ({ children }) => <CardSec>{children}</CardSec>;
 
 export default Card;

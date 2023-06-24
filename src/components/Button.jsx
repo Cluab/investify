@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import styled, { css } from "styled-components";
-import { primary } from "@/styles/variables";
+import styled, { css } from 'styled-components';
+import { primary } from '@/styles/variables';
 
 const Btn = styled.button`
   background-color: white;
@@ -20,21 +20,20 @@ const Btn = styled.button`
     color: white;
   }
 
-  ${(props) =>
-    props.active &&
-    css`
+  ${(props) => props.active
+    && css`
       background-color: ${primary};
       color: white;
     `}
 `;
 
-const Button = ({ text, style, onClick, active, children = null, type = 'button'}) => {
-  return (
-    <Btn style={style} active={active} onClick={onClick}>
-      {children}
-      {text}
-    </Btn>
-  );
-};
+const Button = ({
+  text, style, onClick, active, children = null, type = 'button',
+}) => (
+  <Btn style={style} active={active} onClick={onClick}>
+    {children}
+    {text}
+  </Btn>
+);
 
 export default Button;

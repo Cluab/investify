@@ -1,9 +1,9 @@
-import { NextResponse } from 'next/server'
+import { NextResponse } from 'next/server';
 
-export function middleware(req) {   
-  const url = req.nextUrl.clone()   
+export function middleware(req) {
+  const url = req.nextUrl.clone();
   if (url.pathname === '/') {
-    url.pathname = '/home'
-    return NextResponse.redirect(url)   
-  } 
+    url.pathname = '/home';
+    return NextResponse.redirect(url);
+  }
 }

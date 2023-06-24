@@ -1,10 +1,11 @@
-'use client'
-import styled from "styled-components"
-import FormSearch from "./IntroCard"
-import FormGroup from "./FormGroup"
-import IntroCard from "./IntroCard"
+'use client';
 
-const Section = styled.section `
+import styled from 'styled-components';
+import FormSearch from './IntroCard';
+import FormGroup from './FormGroup';
+import IntroCard from './IntroCard';
+
+const Section = styled.section`
     display: flex;
     flex-direction: column;
     padding: 6rem;
@@ -12,14 +13,12 @@ const Section = styled.section `
     align-items: center;
     gap: 10px;
 
-`
+`;
 
-const Main = ({ children }) => {
-    return (
-        <Section>
-            {children}
-        </Section>
-    )
-}
+const Main = ({ children }) => (
+  <Section>
+    {children}
+  </Section>
+);
 
-export default Main
+export default Main;

@@ -1,3 +1,1 @@
-
-
-export const primary = 'rgba(0, 74, 145, 1);'
+export const primary = 'rgba(0, 74, 145, 1);';
