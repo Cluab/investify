@@ -1,6 +1,11 @@
-export default function Certification() {
+import { useParams } from "next/navigation";
+import CertificationControl from "@/components/CertificationControl"
+import { GetForms } from "@/lib/api"
 
+export default async function Certification() {
+    const data = await GetForms();
+    
     return(
-        <h1>Certification</h1>
+        <CertificationControl data={data} />
     )
 };
