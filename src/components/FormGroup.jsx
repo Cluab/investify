@@ -7,6 +7,8 @@ import EditIcon from '@mui/icons-material/Edit';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import GetAppIcon from '@mui/icons-material/GetApp';
 import Link from "next/link";
+import { primary } from "@/styles/variables";
+
 
 const Container = styled.div`
   display: flex;
@@ -33,7 +35,7 @@ const Table = styled.table`
 `;
 
 const TableHead = styled.thead`
-  background-color: rgba(0, 74, 145, 1);
+  background-color: ${primary};
   color: white;
 `
 
@@ -51,13 +53,13 @@ const ActionContainer = styled.div`
 `
 
 const EditContainer = styled.div`
-  background-color: rgba(0, 74, 145, 1);
+  background-color: ${primary};
   border-radius: 1px;
   padding: 8px;
   padding-bottom: 0;
 `
 const SeeContainer = styled.div`
-  color: rgba(0, 74, 145, 1);
+  color: ${primary};
   border-radius: 1px;
   padding: 8px;
   padding-bottom: 0;

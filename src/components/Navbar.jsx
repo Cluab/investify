@@ -5,6 +5,8 @@ import Image from 'next/image'
 import vector from "@/assets/img/Vector.svg"
 import notification from "@/assets/img/Notification.svg"
 import arrow from "@/assets/img/Arrow - Down 2.svg"
+import { primary } from "@/styles/variables";
+
 
 const Container = styled.div `
     display: flex;
@@ -62,7 +64,7 @@ const AccountSymbol = styled.h1 `
     height: 32px;
     width: 32px;
     color:white;
-    background-color: rgba(0, 74, 145, 1);
+    background-color: ${primary};
     padding: 3px;
     font-size: 15px;
     border-radius: 10px;

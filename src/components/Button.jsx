@@ -1,11 +1,11 @@
 'use client'
 
 import styled, { css } from "styled-components";
-import variables from "@/styles/variables";
+import { primary } from "@/styles/variables";
 
 const Btn = styled.button`
   background-color: white;
-  color: rgba(0, 74, 145, 1);
+  color: ${primary};
   font-weight: 600;
   font-size: 17px;
   width: auto;
@@ -16,14 +16,14 @@ const Btn = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color:  rgba(0, 74, 145, 1);
+    background-color: ${primary};
     color: white;
   }
 
   ${(props) =>
     props.active &&
     css`
-      background-color: rgba(0, 74, 145, 1);
+      background-color: ${primary};
       color: white;
     `}
 `;

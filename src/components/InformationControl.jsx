@@ -10,6 +10,8 @@ import { FormControlLabel } from "@mui/material";
 import { Checkbox } from "@mui/material";
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
+import { primary } from "@/styles/variables";
+
 
 const Container = styled.div`
   display: flex;
@@ -26,7 +28,7 @@ gap: 20px;
 
 const Title = styled.h3 `
     font-weight: 600;
-    color: rgba(0, 74, 145, 1);
+    color: ${primary};
 `
 
 const LowerP = styled.p `

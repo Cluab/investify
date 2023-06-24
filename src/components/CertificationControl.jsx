@@ -8,6 +8,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { FormControlLabel } from "@mui/material";
 import { Checkbox } from "@mui/material"
+import { primary } from "@/styles/variables";
+
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +19,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h3`
-  color: #004a91;
+  color: ${primary};
   font-size: 18px;
   font-weight: 600;
 `;
@@ -38,12 +40,12 @@ gap: 10px;
 
 const UpperP = styled.h3 `
     font-weight: 600;
-    color: rgba(0, 74, 145, 1);
+    color: ${primary};
 `
 
 const LowerP = styled.p `
     font-size: 15px;
-    color: rgba(0, 74, 145, 1);
+    color: ${primary};
     width: 80%;
 `
 
@@ -103,8 +105,8 @@ const CertificationControl = ({data}) => {
       </ButtonBox>
         <ButtonContainer>
         <Link href={'/home'}>
-          <Button text={'Cancel'} style={{ border: '1px solid #004a91', width: '180px'}} /></Link>
-          <Button text={'Save'} type="submit" style={{ border: '1px solid #004a91', width: '180px'}} />
+          <Button text={'Cancel'} style={{ border: '1px solid ${primary}', width: '180px'}} /></Link>
+          <Button text={'Save'} type="submit" style={{ border: '1px solid ${primary}', width: '180px'}} />
         </ButtonContainer>
       </form>
     </Container>

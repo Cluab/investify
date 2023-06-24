@@ -6,6 +6,8 @@ import Button from "./Button";
 import { updateForm } from "@/lib/api";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import { primary } from "@/styles/variables";
+
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +17,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h3`
-  color: #004a91;
+  color: ${primary};
   font-size: 18px;
   font-weight: 600;
 `;

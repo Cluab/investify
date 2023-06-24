@@ -9,6 +9,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { primary } from "@/styles/variables";
+
 
 const Container = styled.div `
     display: flex;
@@ -31,7 +33,7 @@ align-items: center;
 border-radius: 50%;
 height: 64px;
 padding: 10px;
-background-color: rgba(0, 74, 145, 1);
+background-color: ${primary};
 `
 
 
@@ -41,12 +43,12 @@ flex-direction: column;
 
 const UpperP = styled.h3 `
     font-weight: 600;
-    color: rgba(0, 74, 145, 1);
+    color: ${primary};
 `
 
 const LowerP = styled.p `
     font-size: 15px;
-    color: rgba(0, 74, 145, 1);
+    color: ${primary};
 `
 
 const Right = styled.div `
