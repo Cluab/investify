@@ -1,4 +1,3 @@
-import { useParams } from 'next/navigation';
 import CertificationControl from '@/components/CertificationControl';
 import { GetForms } from '@/lib/api';
 

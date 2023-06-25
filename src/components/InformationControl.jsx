@@ -77,7 +77,7 @@ const InformationControl = () => (
       <Title>Other Information</Title>
       <LowerP>Where do you want to send the following:</LowerP>
     </PContainer>
-    <form onSubmit={handleSubmit}>
+    <form>
       <InputContainer>
         <Box>
           <BoxTitle>Certificates</BoxTitle>
