@@ -55,7 +55,7 @@ display: flex;
 justify-content: center;
 `;
 
-const IntroCard = ({ title, details, search }) => {
+const IntroCard = ({ title, details, search = true }) => {
   const [order, setOrder] = useState('');
 
   const handleChange = (e) => {

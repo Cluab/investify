@@ -28,7 +28,7 @@ const Btn = styled.button`
 `;
 
 const Button = ({
-  text, style, onClick, active, children = null, type = 'button',
+  text, style = null, onClick = null, active = false, children = null, type = 'button',
 }) => (
   <Btn style={style} active={active} onClick={onClick}>
     {children}

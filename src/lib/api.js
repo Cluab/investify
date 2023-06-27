@@ -21,25 +21,37 @@ const fetcher = async ({
 };
 
 export const GetForms = async () => {
-  const baseUrl = 'http://localhost:3000';
-  const noCache = Date.now().toString(16);
-  const url = new URL(`/api/forms?noCache=${noCache}`, baseUrl);
-  return fetcher({
-    url: url.toString(),
-    method: 'get',
-    json: true,
-  });
+  try {
+    const baseUrl = 'http://localhost:3000';
+    const noCache = Date.now().toString(16);
+    const url = new URL(`/api/forms?noCache=${noCache}`, baseUrl);
+    return await fetcher({
+      url: url.toString(),
+      method: 'get',
+      json: true,
+    });
+  } catch (error) {
+    // Handle error when fetching forms
+    console.error('Failed to fetch forms:', error);
+    throw error;
+  }
 };
 
 export const updateForm = async (formId, updatedFields) => {
-  const baseUrl = 'http://localhost:3000';
-  const noCache = Date.now().toString(16);
-  const url = new URL(`/api/forms?noCache=${noCache}`, baseUrl);
-  // Send the updated form data to the API
-  return fetcher({
-    url: url.toString(),
-    method: 'put',
-    body: { updatedFields, formId },
-    json: true,
-  });
+  try {
+    const baseUrl = 'http://localhost:3000';
+    const noCache = Date.now().toString(16);
+    const url = new URL(`/api/forms?noCache=${noCache}`, baseUrl);
+    // Send the updated form data to the API
+    return await fetcher({
+      url: url.toString(),
+      method: 'put',
+      body: { updatedFields, formId },
+      json: true,
+    });
+  } catch (error) {
+    // Handle error when updating form
+    console.error('Failed to update form:', error);
+    throw error;
+  }
 };
